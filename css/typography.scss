@@ -1,12 +1,22 @@
 body {
 	color: #666;
-	font-family: "Gotham SSm A", "Gotham SSm B" !important;
+	font-family: "Gotham SSm A", "Gotham SSm B";
 	font-style: normal;
 	font-weight: 400;
 	font-size:15px;
 	line-height: 22px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 { 
+	font-family: "serifa",serif;
+	font-weight: 500;
+
+	&.font-gotham {
+		font-family: "Gotham SSm A", "Gotham SSm B";
+		font-weight: 600;
+	}
 }
 
 a {
@@ -16,3 +26,4 @@ a {
 }
 
 a:hover { color: $colorOrange; }
+

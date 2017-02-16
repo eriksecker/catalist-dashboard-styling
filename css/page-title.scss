@@ -1,0 +1,47 @@
+.page-title {
+	text-align: center;
+	color: $colorPurple;
+	margin-top: 15px;
+	margin-bottom: 35px;
+	padding: 15px 25px 5px;
+
+	background-image: url('../img/pattern.png');
+	background-color: $colorGrayBackground;
+
+	border-top: 1px solid $colorDarkBlue;
+	border-bottom: 1px solid $colorDarkBlue;
+
+	h1, h2, h3, h4, h5 {
+		margin-top: 0px;
+	}
+
+	h1 { font-size: 50px; line-height: 50px; }
+	h2 { font-size: 40px; line-height: 40px; }
+	h3 { font-size: 30px; line-height: 30px; }
+	h4 { font-size: 24px; line-height: 24px; }
+	h5 { font-size: 18px; line-height: 18px; }
+	h6 { font-size: 15px; line-height: 15px; }
+
+}
+
+@media (min-width: 992px) {
+.page-title {
+	width: 66%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+}
+@media (min-width: 992px) {
+	.page-title {
+
+		h1 { font-size: 60px; line-height: 60px; }
+		h2 { font-size: 50px; line-height: 50px; }
+		h3 { font-size: 40px; line-height: 40px; }
+		h4 { font-size: 30px; line-height: 30px; }
+		h5 { font-size: 20px; line-height: 20px; }
+		h6 { font-size: 16px; line-height: 16px; }
+
+	}
+
+}
