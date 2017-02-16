@@ -1,0 +1,50 @@
+footer {
+	background-color: $colorDarkBlue;
+	color: $colorGrayBlue;
+	text-align: center;
+	padding: 10px 0;
+
+	h1, h2, h3, h4, h5 { font-family: "serifa",serif; }
+
+	.footer-menus {
+		text-align: left;
+		padding: 25px 0;
+		border-top: 1px solid #0e2c47;
+		border-bottom: 1px solid #2a4156;
+
+		.menu-title {
+			font-size: 15px;
+			letter-spacing: .2em;
+			font-weight: 700;
+		}
+
+		a {
+			color: $colorYellow;
+
+			&:hover, &:active { color: #888; }
+		}
+	}
+
+	.footer-copyright {
+		margin-top: 10px;
+		padding: 10px 0;
+	}
+
+	.footer-social {
+		margin: 8px 0 10px;
+
+		a {
+			display: inline-block;
+			margin-bottom: 10px;
+			line-height: 40px;
+			width: 40px;
+			color: $colorGrayBlue;
+
+			&:hover { color: #fff; }
+
+			&.twitter:hover { background-color: #63cdf1; }
+			&.facebook:hover { background-color: #507cbe; }
+			&.linkedin:hover { background-color: #90cadd; }
+		}
+	}
+}
