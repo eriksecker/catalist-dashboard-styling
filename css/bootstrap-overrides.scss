@@ -1,0 +1,102 @@
+/* WOULD BE BETTER TO DO WITH BOOTSTRAP SASS... */
+
+/* FORM OVERRIDES */
+.form-control,
+.btn {
+	padding: 10px 12px;
+	font-size: 15px;
+	line-height: 22px;
+	height: 42px;
+}
+.btn-primary { 
+	background-color: $colorPurple;
+	transition: background-color .2s linear, color .2s linear;
+
+	&:hover { background-color: $colorOrange; }
+}
+
+
+/* TABLE OVERRIDES */
+.table {
+	border: 1px solid $colorDarkBlue;
+	font-size: 14px;
+
+	thead {
+		th {
+			color: #fff;
+			background-color: $colorDarkBlue;
+		}
+
+		>tr>th {
+			border-bottom: none;
+			padding: 10px 8px;
+		}
+	}
+
+	tbody {
+		>tr>td {
+			border-top: 1px solid $colorDarkBlue;
+			padding: 10px 8px;
+		}
+
+		a { text-decoration: underline; }
+		.fa { color: $colorOrange; }
+	}
+
+	&.table-striped>tbody>tr:nth-of-type(odd) {
+		background-color: $colorGrayBackground;
+	}
+
+	&.pagination-footer { margin-bottom: 0; }
+}
+
+.table-pagination-footer {
+	background-color: $colorDarkBlue;
+	color: #e7e7e7;
+	font-size: 13px;
+	padding: 10px 8px;
+
+	>div { height: 30px; line-height: 30px; }
+	.col-pagination {
+		text-align: right;
+
+		.pagination {
+			margin: 0;
+
+			li {
+				a {
+					color: #666;
+					background-color: $colorGrayBackground;
+					transition: background-color .2s linear, color .2s linear, border-color .2s linear;
+
+					&:hover { 
+						color: #fff;
+						background-color: $colorPurple;
+						border-color: #666;
+					}
+				}
+
+				&.active {
+					a {
+						background-color: $colorPurple;
+						color: #fff;
+						border-color: #666;
+					}
+				}
+			}
+
+			.fa { font-weight: bold; }
+		}
+	}
+}
+@media (max-width: 767px) {
+	.table-pagination-footer {
+		text-align: center;
+
+		>div { height: auto; }
+		
+		.col-pagination {
+			text-align: center;
+		}
+	}
+}

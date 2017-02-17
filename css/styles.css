@@ -1,3 +1,74 @@
+/* WOULD BE BETTER TO DO WITH BOOTSTRAP SASS... */
+/* FORM OVERRIDES */
+.form-control,
+.btn {
+  padding: 10px 12px;
+  font-size: 15px;
+  line-height: 22px;
+  height: 42px; }
+
+.btn-primary {
+  background-color: #7b004e;
+  transition: background-color .2s linear, color .2s linear; }
+  .btn-primary:hover {
+    background-color: #f7941e; }
+
+/* TABLE OVERRIDES */
+.table {
+  border: 1px solid #0e2c47;
+  font-size: 14px; }
+  .table thead th {
+    color: #fff;
+    background-color: #0e2c47; }
+  .table thead > tr > th {
+    border-bottom: none;
+    padding: 10px 8px; }
+  .table tbody > tr > td {
+    border-top: 1px solid #0e2c47;
+    padding: 10px 8px; }
+  .table tbody a {
+    text-decoration: underline; }
+  .table tbody .fa {
+    color: #f7941e; }
+  .table.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f4f5f6; }
+  .table.pagination-footer {
+    margin-bottom: 0; }
+
+.table-pagination-footer {
+  background-color: #0e2c47;
+  color: #e7e7e7;
+  font-size: 13px;
+  padding: 10px 8px; }
+  .table-pagination-footer > div {
+    height: 30px;
+    line-height: 30px; }
+  .table-pagination-footer .col-pagination {
+    text-align: right; }
+    .table-pagination-footer .col-pagination .pagination {
+      margin: 0; }
+      .table-pagination-footer .col-pagination .pagination li a {
+        color: #666;
+        background-color: #f4f5f6;
+        transition: background-color .2s linear, color .2s linear, border-color .2s linear; }
+        .table-pagination-footer .col-pagination .pagination li a:hover {
+          color: #fff;
+          background-color: #7b004e;
+          border-color: #666; }
+      .table-pagination-footer .col-pagination .pagination li.active a {
+        background-color: #7b004e;
+        color: #fff;
+        border-color: #666; }
+      .table-pagination-footer .col-pagination .pagination .fa {
+        font-weight: bold; }
+
+@media (max-width: 767px) {
+  .table-pagination-footer {
+    text-align: center; }
+    .table-pagination-footer > div {
+      height: auto; }
+    .table-pagination-footer .col-pagination {
+      text-align: center; } }
 body {
   color: #666;
   font-family: "Gotham SSm A", "Gotham SSm B";
@@ -94,7 +165,7 @@ a:hover {
     font-size: 15px; } }
 .page-title {
   text-align: center;
-  color: #7b004e;
+  color: #f7941e;
   margin-top: 15px;
   margin-bottom: 35px;
   padding: 15px 25px 5px;
@@ -147,6 +218,30 @@ a:hover {
   .page-title h6 {
     font-size: 16px;
     line-height: 16px; } }
+.main-content {
+  min-height: 50vh; }
+  .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5 {
+    color: #f7941e; }
+
+.search-form .simple {
+  max-width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  .search-form .simple .input-group .btn {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .search-form .simple .advanced-toggle {
+    font-size: .8em;
+    margin-top: 5px; }
+
+.search-results {
+  margin-bottom: 75px; }
+  .search-results .result-details-xs {
+    margin: 8px 0;
+    font-size: 12px;
+    line-height: 20px; }
+
 footer {
   background-color: #0e2c47;
   color: #abbac7;

@@ -1,0 +1,28 @@
+.search-form {
+	.simple {
+		max-width: 500px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+
+		.input-group .btn {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.advanced-toggle {
+			font-size: .8em;
+			margin-top: 5px;
+		}
+	}
+}
+
+.search-results {
+	margin-bottom: 75px;
+
+	.result-details-xs {
+		margin: 8px 0;
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
